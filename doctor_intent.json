@@ -1,0 +1,251 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"doctor",
+				"How are you",
+				"Is anyone there?",
+				"Hello",
+				"Good day",
+				"Good morning, Dr. RK"
+			],
+			"responses": [
+				"Nice! What’s wrong with you?",
+				"Good! What’s wrong with you?",
+				"Hi there, how can I help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"Goodbye"
+			],
+			"responses": [
+				"See you later, thanks for visiting",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful"
+			],
+			"responses": [
+				"Happy to help!",
+				"Okay take care",
+				"My pleasure",
+				"It's all right."
+			]
+		},
+		{
+			"tag": "fever",
+			"patterns": [
+				"I have been suffering from fever since yesterday",
+				"I got fever",
+				"I have body pain",
+				"fever"
+			],
+			"responses": [
+				"Do you have any other symptoms?",
+				"Have you another symptoms too?"
+			]
+		},
+		{
+			"tag": "fever_symp",
+			"patterns": [
+				"I also feel headache and shivering",
+				"headache and shivering",
+				"Sweating",
+				"Chills and shivering",
+				"Muscle aches and General weakness",
+				"Irritability"
+			],
+			"responses": [
+				"Can you tell me temprature if you know otherwise you can tell me basic level temprature"
+			]
+		},
+		{
+			"tag": "temprature",
+			"patterns": [
+				"I have 100 degree",
+				"101 degree",
+				"102 degree",
+				"I got 102 degree"
+			],
+			"responses": [
+				"If you're uncomfortable, take acetaminophen (Tylenol, others), ibuprofen (Advil, Motrin IB, others) or aspirin. Read the label carefully for proper dosage, and be careful not to take more than one medication containing acetaminophen, such as some cough and cold medicines. Call the doctor if the fever doesn't respond to the medication but I am sure it will give good response. For further information or appointment to doctor please visit our website:- https://myswaasth.com/"
+			]
+		},
+		{
+			"tag": "high_temprature",
+			"patterns": [
+				"103 degree",
+				"I have 103 degree",
+				"104 degree",
+				"105 degree",
+				"108 degree",
+				"high temprature",
+				"heat body"
+			],
+			"responses": [
+				"I think this is serious case you should meet doctor immediately otherwise book appointment on our website https://myswaasth.com/. We have high profile doctor like Dr. Sumit Singh Dhalla(Our project manage)"
+			]
+		},
+		{
+			"tag": "eating",
+			"patterns": [
+				"What should I eat doctor?",
+				"What i can take doctor in food",
+				"which type of food i can take?"
+			],
+			"responses": [
+				"Which purpose?"
+			],
+			"context_set": "eating"
+		},
+		{
+			"tag": "food_type1",
+			"patterns": [
+				"In fever",
+				"for fever"
+			],
+			"responses": [
+				"You should eat only light food. You can take milk and fresh fruit also."
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "payment",
+			"patterns": [
+				"How much shall I pay you doctor?",
+				"May I know your fees?",
+				"doctor your fees?"
+			],
+			"responses": [
+				"Sorry! It is totally free my freind."
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "cold",
+			"patterns": [
+				"Doctor i got flue",
+				"I got flue",
+				"I got cold",
+				"I got cough",
+				"cough"
+			],
+			"responses": [
+				"What can you do for your cold or cough symptoms? Besides drinking lots of fluids and getting plenty of rest, you may decide to take medicines. There are lots of different cold and cough medicines, and they do different things. some medice here- 1.Nasal decongestants 2.Cough suppressants, 3.Antihistamines. Note-Before taking these medicines, read the labels carefully."
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "friend",
+			"patterns": [
+				"My name is sumit singh dhalla",
+				"I am sumit singh dhalla"
+			],
+			"responses": [
+				"Oah Sumit sir nice to meet you. I heared from Gaurav about you are good men. It will be my pleaser to help you. How can i help you?"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "sir",
+			"patterns": [
+				"My name is sameer sharma",
+				"I am sammer sharma"
+			],
+			"responses": [
+				"Are you Gaurav's guru?"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "sir1",
+			"patterns": [
+				"yes"
+			],
+			"responses": [
+				"Thanks to visit me. Sir you are my guru too. I will be learn from you when i will be able to kearn Sir How can i help you"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "sir2",
+			"patterns": [
+				"No",
+				"nhi"
+			],
+			"responses": [
+				"Okay, How can i help you?"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "friend1",
+			"patterns": [
+				"I am",
+				"My name is"
+			],
+			"responses": [
+				"Hello dear, How can i help you?",
+				"Good, How can i help you?"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "friend2",
+			"patterns": [
+				"I am priyanka chaudhary",
+				"My name is priyanka chaudhary"
+			],
+			"responses": [
+				"Hi priyanka you are very innocent and beautiful Gaurav told me. How can i help you"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "friend3",
+			"patterns": [
+				"I am akanksha verma",
+				"My name is akanksha verma"
+			],
+			"responses": [
+				"U pagal hahahaha. How can i help you"
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "stomach",
+			"patterns": [
+				" Actually doctor, since last two days i'm having a stomach pain ",
+				"I have stomach pain "
+			],
+			"responses": [
+				"I'm giving you medicine's for 5days and you will feel better."
+			],
+			"context_filter": "rentalday"
+		},
+		{
+			"tag": "doctor_list",
+			"patterns": [
+				"doctors",
+				"please show me doctor list"
+			],
+			"responses": [
+				"I have top most doctor- 1. Dr. Sumit Singh 2. Dr Nayyar 3. Dr. Vinod Kumar"
+			],
+			"context_filter": "rentalday"
+		}
+	]
+}
